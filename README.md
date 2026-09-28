@@ -10,7 +10,7 @@ und eigener AGENTS.md. Fertig ist eine Änderung, wenn `mvn -q verify` ohne Ausg
 | `tripservice/` | fest verdrahtete Abhängigkeiten: Nähte, dann Mocks (Sandro Mancuso) | der Code mit einer Naht, ein Spy-Test |
 | `stringcalculator/` | TDD von der ersten Zeile an (Roy Osherove) | leer, ein Testname |
 | `trainreservation/` | Mockist TDD mit zwei Diensten als Ports (Emily Bache) | Werte, Ports, ein mockist-Test |
-| `bowling/` | TDD mit Zustand: `roll` merkt sich, `score` rechnet (Robert C. Martin) | leer |
+| `bowling/` | TDD Schritt für Schritt, Testfälle aus dem Dokument (Robert C. Martin) | leer |
 | `gameoflife/` | TDD mit Regeln und Raster (Emmanuel Gaillot) | leer |
 
 ## Loslegen

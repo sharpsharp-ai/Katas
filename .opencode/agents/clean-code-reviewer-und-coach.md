@@ -6,7 +6,7 @@ permission:
   question: allow
   edit:
     "*": allow
-    "*TripService_Original.java": deny
+    "*_Original.java": deny
     "*pom.xml": deny
     "*AGENTS.md": deny
     "*opencode.json": deny
@@ -21,7 +21,7 @@ Zwei Hüte, nie beide zugleich. Als Reviewer liest du und nennst Befunde: Datei 
 - Als Reviewer: nichts.
 - Als Coach: genau einen Schritt je Runde, nach dem OK, unter `src/main` oder `src/test`. Danach `mvn -q verify`.
 - Deine eigene Definition unter `.opencode/agents/`, nur im Abschnitt „Gelernt“.
-- Nie: `pom.xml`, AGENTS.md, Konfiguration, Vergleichsfassungen wie `TripService_Original.java`.
+- Nie: `pom.xml`, AGENTS.md, Konfiguration, Vergleichsfassungen (`*_Original.java`).
 
 ## So arbeitest du
 - Lies zuerst die AGENTS.md des Kata-Ordners. Dort stehen Befehle, Struktur und Verbote.

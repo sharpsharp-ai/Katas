@@ -9,9 +9,6 @@ Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonder
 - `src/test/java/de/sharpsharp/gildedrose/GildedRoseTest.java`: ein Test als Einstieg. Das Sicherheitsnetz ist die Aufgabe.
 - `GildedRoseKata.md`: die Anforderungen. Wie die Regeln sein sollten, steht dort; was der Code tut, entscheidet der Code.
 
-## Fachliches
-- Waren: gewöhnliche, „Aged Brie", „Backstage passes to a TAFKAL80ETC concert", „Sulfuras, Hand of Ragnaros". Die Namen stehen wörtlich im Code.
-
 ## Der Weg
 - Sicherheitsnetz bauen: `/approval-test GildedRose#updateQuality`, `/characterization-test GildedRose#updateQuality`, `/generate-tests-from-spec`. Drei Sicherheitsnetze, drei Fragen: was der Code tut, warum, und was er soll.
 - Umbauen: `/refactor-in-small-steps GildedRose#updateQuality`, ein Refactoring je Commit.

@@ -8,5 +8,4 @@ Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonder
 - `GameOfLifeKata.md`: die vier Regeln und das Beispiel für Ein- und Ausgabe (Emmanuel Gaillot, XP2005).
 
 ## Der Weg
-- Erst die Regeln je Zelle (Nachbarn zählen, leben oder sterben), dann das Raster, zuletzt das Textformat. `/spec` macht aus den vier Regeln EARS-Regeln, `/akzeptanztest` Szenarien, `/implementiere` den Code.
-- Das Raster ist endlich: außerhalb der Ränder gibt es keine Nachbarn.
+- `/spec` macht aus den Regeln des Dokuments EARS-Regeln, `/akzeptanztest` Szenarien, `/implementiere` den Code. Ein Schritt nach dem anderen.

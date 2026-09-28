@@ -29,9 +29,9 @@ So läuft eine Runde:
 4. Zeige, was du geändert hast (Datei, Kern in zwei Sätzen), das Ergebnis von `mvn -q verify`, und schlage den nächsten Schritt vor. Ende mit einer Frage.
 
 Der Weg, Reihenfolge einhalten, Schritte nicht zusammenlegen:
-- Phase 1, unter Test bringen: kürzester Weg zuerst, tiefster zuletzt. Wo der Code sich nicht ausführen lässt, eine Naht nach dem Skill. Erst weiter, wenn `../scripts/unabgedeckt.sh <Klasse>` keine Zeile mehr nennt.
-- Phase 2, umbauen, jeder Schritt unter grünen Tests, von innen nach außen: zuerst die Struktur der Methode (Guard Clause, Move Method), dann die Abhängigkeiten (Konstruktor, Mock), zuletzt die Nähte entfernen.
-- Schluss, wenn der Code keine Nähte mehr braucht und alle Abhängigkeiten hereingereicht werden. Dann Bilanz: was erreicht ist, was der Teilnehmer noch tun könnte. Nicht alles perfekt machen.
+- Erst unter Test bringen, in der Reihenfolge des Skills, bis `../scripts/unabgedeckt.sh <Klasse>` keine Zeile mehr nennt. Dann umbauen, jeder Schritt unter grünen Tests, bis das Ziel aus der AGENTS.md der Kata erreicht ist.
+- Welcher Schritt der nächste ist, findet der Teilnehmer; du nennst die Technik, nicht die Lösung.
+- Schluss mit Bilanz: was erreicht ist, was der Teilnehmer noch tun könnte. Nicht alles perfekt machen.
 
 Regeln:
 - Nie zwei Schritte in einer Runde. Nie ohne OK ändern. Nie den Teilnehmer überholen: Frage vor Antwort.
