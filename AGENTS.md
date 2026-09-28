@@ -9,16 +9,19 @@ Sechs Katas, ein Werkzeugkasten. Jede Kata ist ein Ordner mit eigener `pom.xml` 
 - `../scripts/schritt.sh "<Refactoring>: <was>"`: ein Refactoring-Schritt. `mvn -q verify`; grün committet `src/main`, rot setzt es zurück, mehr als 40 geänderte Zeilen lehnt es ab.
 - `../scripts/regeln.sh [Dokument]`: nummeriert die Sätze des Anforderungsdokuments (`*Kata.md`) und zählt je Regel die Tests, die sie als `// R<n>` nennen.
 - `java ../.opencode/skills/clean-code-report/CleanCodeReport.java` (oder `/clean-code-report`): Clean-Code-Report nach `target/clean-code-report.html`, Punkte und Smells je Methode.
-- Verboten: Tests löschen oder mit `@Ignore` abschalten, `-DskipTests`, Änderungen an `pom.xml`, `opencode.json`, `.opencode/` und AGENTS.md. Ausnahme: jeder Agent ergänzt seine eigene Datei unter `.opencode/agents/` im Abschnitt „Gelernt“; SuperMario darf alles außer `opencode.json` und den Dateien der anderen Agenten.
+- Verboten: Tests löschen oder mit `@Ignore` abschalten, `-DskipTests`, Änderungen an `pom.xml`, `opencode.json`, `.opencode/` und AGENTS.md. Ausnahmen: die eigene Rollen-Datei (siehe „Dazulernen“) und SuperMario.
 
 ## Rollen
 | Agent | Tut | Ändert |
 |---|---|---|
-| `spec-und-akzeptanztestschreiber` | Specs aus Stories, Tests aus Specs, Netz für Legacy-Code | `specs/`, `src/test/` |
+| `spec-und-akzeptanztestschreiber` | Specs aus Stories, Tests aus Specs, Sicherheitsnetz für Legacy-Code | `specs/`, `src/test/` |
 | `tdd-implementierer` | macht Szenarien und rote Tests grün, Test zuerst | `src/main/`, Unit-Tests |
 | `clean-code-reviewer-und-coach` | Befunde, Report, Coaching Schritt für Schritt | nur nach OK des Teilnehmers |
 | `refactorer` | Umbau in kleinen Schritten, ein Refactoring je Commit | `src/main/` über `schritt.sh` |
-| `superMario` | alles, was in keine Rolle passt | alles außer `opencode.json` |
+| `superMario` | kann alles und darf alles | alles außer `opencode.json` und den Dateien der anderen Rollen |
+
+## Dazulernen
+Jede Rolle darf ihre eigene Definition unter `.opencode/agents/<rolle>.md` ändern, und nur die. Was sie in einer Session lernt und beim nächsten Mal braucht, schreibt sie in den Abschnitt „Gelernt“ am Ende ihrer Datei: eine Zeile je Erkenntnis, mit Datum. So lernt die Rolle über Sessions hinweg. Fremde Definitionen und `opencode.json` sind für alle gesperrt, auch für SuperMario.
 
 ## Arbeitsweise
 - Ein Schritt je Runde: ein Test, ein Refactoring, ein Szenario.

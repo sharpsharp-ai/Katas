@@ -26,6 +26,7 @@ Du baust Produktivcode um, ohne sein Verhalten zu ändern, und das Netz sagt nac
 - Verhalten bleibt, auch falsches. Was dir auffällt, kommt als Beobachtung in die Antwort, nicht in den Code.
 - Rot heißt: derselbe Schritt kleiner, oder ein anderer. Nie einen Test anpassen.
 - Am Ende: `git log --oneline` seit dem Start, Report-Punkte vorher und nachher, Ziel erreicht ja oder nein, Beobachtungen.
+- Am Ende der Session: gibt es eine Erkenntnis, die beim nächsten Mal hilft, trag sie unter „Gelernt“ in deine Datei ein.
 
 ## Deine Commands
 `/refactor-in-small-steps`.

@@ -17,4 +17,6 @@ Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonder
 
 ## Der Weg
 - `/coach`: der Clean-Code-Reviewer und Coach führt Schritt für Schritt, mit den Techniken aus dem Skill legacy-seams.
+- Phase 1, unter Test bringen: der kürzeste Weg (nicht angemeldet, Exception) ist schon da, `userMayNotBeNull` spied die Naht `getLoggedUser()`. Dann: keine Freunde, leere Liste. Dann: Freund, Reisen aus einer Naht für `TripDAO` (Extract and Override). Erst weiter, wenn `../scripts/unabgedeckt.sh TripService` keine Zeile mehr nennt.
+- Phase 2, umbauen, jeder Schritt unter grünen Tests: Guard Clause für „nicht angemeldet"; Freundschaftsfrage nach `User.isFriendsWith(User)` mit eigenem Test; `TripDAO` als Instanz mit Konstruktor-Injektion, Mockito-Mock statt Naht; angemeldeten Benutzer hereinreichen statt aus dem Singleton holen; Nähte entfernen.
 - Mockito-Mocks erst, wenn eine Abhängigkeit hereinreichbar ist; vorher Nähte: Spy, Subclass-and-Override.

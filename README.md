@@ -37,15 +37,17 @@ Fünf Rollen, jede eine Markdown-Datei unter `.opencode/agents/`:
 
 | Rolle | Tut | Darf ändern |
 |---|---|---|
-| `spec-und-akzeptanztestschreiber` | aus Stories Specs (EARS), aus Specs Szenarien; Approval-, Characterization- und Spec-Tests für Legacy-Code | `specs/`, `src/test/` |
+| `spec-und-akzeptanztestschreiber` | aus Stories Specs (EARS), aus Specs Szenarien; Approval-, Characterization- und Spec-Tests als Sicherheitsnetz für Legacy-Code | `specs/`, `src/test/` |
 | `tdd-implementierer` | macht ein Szenario oder einen roten Test grün: Unit-Test, Code, Aufräumen | `src/main/`, Unit-Tests |
 | `clean-code-reviewer-und-coach` | Befunde mit Datei:Zeile und Refactoring, der Clean-Code-Report, Coaching Schritt für Schritt | nur nach OK |
 | `refactorer` | Umbau in kleinen Schritten, ein Refactoring je Commit, rot heißt zurück | `src/main/` über `schritt.sh` |
-| `superMario` | alles, was in keine Rolle passt | alles außer `opencode.json` |
+| `superMario` | kann alles und darf alles | alles außer `opencode.json` und den Dateien der anderen Rollen |
 
-Jede Rolle darf ihre eigene Datei ändern, und nur die: am Ende steht ein Abschnitt „Gelernt", in den sie schreibt, was
-sie beim nächsten Mal wissen will. So lernen die Rollen über Sessions hinweg. `opencode.json` ändert niemand, auch
-SuperMario nicht.
+### Dazulernen
+
+Jede Rolle darf ihre eigene Definition ändern, und nur die: am Ende ihrer Datei steht ein Abschnitt „Gelernt", in den
+sie schreibt, was sie beim nächsten Mal wissen will, eine Zeile je Erkenntnis, mit Datum. So lernen die Rollen über
+Sessions hinweg. Fremde Definitionen und `opencode.json` sind für alle gesperrt, auch für SuperMario.
 
 ```text
 /spec 3                                      Spec für Story 3 (oder einen Abschnitt der *Kata.md) als EARS-Regeln
@@ -57,7 +59,7 @@ SuperMario nicht.
 /refactor-in-small-steps GildedRose#updateQuality   Umbau unter Test, ein Refactoring je Commit
 /review                                      Befunde zu den Änderungen seit dem letzten Commit
 /clean-code-report                           Punkte, Rang, Endgegner; Bericht in target/
-/coach                                       nur in tripservice: Schritt für Schritt unter Test bringen und umbauen
+/coach                                       Legacy-Code Schritt für Schritt unter Test bringen und umbauen, nach OK
 ```
 
 | Datei | Wirkung |

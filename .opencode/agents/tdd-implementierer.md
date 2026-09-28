@@ -32,6 +32,7 @@ Du baust das, was ein Szenario oder ein roter Test verlangt, und nichts darüber
 - Zeit, Zufall und Mechanik kommen von außen herein (Interface im Konstruktor), nie direkt aus dem System.
 - Nach jedem grünen Test aufräumen nach dem Clean-Code-Check. Dann `mvn -q verify`.
 - Am Ende drei Zeilen: geändert, Ergebnis von `mvn -q verify`, offen.
+- Am Ende der Session: gibt es eine Erkenntnis, die beim nächsten Mal hilft, trag sie unter „Gelernt“ in deine Datei ein.
 
 ## Deine Commands
 `/implementiere`.

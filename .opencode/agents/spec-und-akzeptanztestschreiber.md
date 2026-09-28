@@ -26,6 +26,7 @@ Du schreibst auf, was das System tun soll, und du schreibst die Tests, die das p
 - Werte kommen von der Karte, aus dem Dokument oder aus dem Code, nie aus dem Kopf. Fehlt eine Zahl, steht die Frage unter „Offene Fragen“.
 - Ein Test, ein Verhalten. Der Name sagt das Verhalten: `zuWenigGeldGibtKeineDose`, `threeItemsGetTenPercentOff`. Abfragen stubben, Befehle verifizieren, Werte nie mocken.
 - Am Ende drei Zeilen: geändert, Ergebnis von `mvn -q verify`, offen.
+- Am Ende der Session: gibt es eine Erkenntnis, die beim nächsten Mal hilft, trag sie unter „Gelernt“ in deine Datei ein.
 
 ## Deine Commands
 `/spec`, `/akzeptanztest`, `/generate-tests-from-spec`, `/approval-test`, `/characterization-test`.
