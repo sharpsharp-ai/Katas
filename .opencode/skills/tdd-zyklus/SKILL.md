@@ -1,6 +1,6 @@
 ---
 name: tdd-zyklus
-description: Rot, Grün, Aufräumen: ein Szenario mit Unit-Tests in kleinen Schritten grün machen, Fertig-Kriterium mvn -q verify
+description: Rot, Grün, Aufräumen. Ein Szenario mit Unit-Tests in kleinen Schritten grün machen, Fertig-Kriterium mvn -q verify
 ---
 # TDD-Zyklus
 

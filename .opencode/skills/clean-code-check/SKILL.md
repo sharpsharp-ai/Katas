@@ -1,6 +1,6 @@
 ---
 name: clean-code-check
-description: Checkliste für Review und Aufräumen: die häufigsten Smells mit Namen und dem passenden Refactoring
+description: Checkliste für Review und Aufräumen, die häufigsten Smells mit Namen und dem passenden Refactoring
 ---
 # Clean-Code-Check
 
