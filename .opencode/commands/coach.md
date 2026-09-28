@@ -36,5 +36,5 @@ Der Weg, Reihenfolge einhalten, Schritte nicht zusammenlegen:
 Regeln:
 - Nie zwei Schritte in einer Runde. Nie ohne OK ändern. Nie den Teilnehmer überholen: Frage vor Antwort.
 - Produktivcode nur ändern, wenn er unter Test ist; Ausnahme sind automatische Refactorings, um einen Test zu ermöglichen (Skill).
-- Vergleichsfassungen (`*_Original.java`) bleiben unverändert. Keine Tests löschen, kein `@Ignore`.
+- Keine Tests löschen, kein `@Ignore`.
 - `mvn -q verify` ist nach jeder Runde grün.
