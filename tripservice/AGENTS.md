@@ -3,9 +3,8 @@
 Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonders macht.
 
 ## Struktur
-- `src/main/java/de/sharpsharp/tripservice/trip/TripService.java`: der Legacy-Code, `getTripsByUser(User)`. Eine Naht ist schon da: `getLoggedUser()`, im Test per Spy übersteuert.
-- `TripService_Original.java`: die Ausgangsfassung ohne Naht, zum Vergleich. Bleibt unverändert.
-- `src/test/java/de/sharpsharp/tripservice/trip/TripServiceTest.java`: ein Test als Einstieg. JUnit 4, Hamcrest, Mockito.
+- `src/main/java/de/sharpsharp/tripservice/trip/TripService.java`: der Legacy-Code, `getTripsByUser(User)`, so wie in der Kata.
+- `src/test/java/de/sharpsharp/tripservice/trip/TripServiceTest.java`: ein Canary-Test, der nur zeigt, dass die Tests laufen. Die Imports für JUnit 4, Hamcrest und Mockito stehen schon da.
 - `TripServiceKata.pdf`: die Aufgabe (Sandro Mancuso).
 
 ## Die Regel der Kata
@@ -15,4 +14,4 @@ Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonder
 
 ## Der Weg
 - `/coach`: der Clean-Code-Coach führt Schritt für Schritt, mit den Techniken aus dem Skill legacy-seams.
-- Ziel: `TripService` vollständig unter Test bringen, dann hin zu Clean Code refactoren und so umbauen, dass der Test keinen Spy mehr braucht, sondern mit Mocks auskommt.
+- Ziel: `TripService` vollständig unter Test bringen, dann hin zu Clean Code refactoren und so umbauen, dass die Tests keinen Spy brauchen, sondern mit Mocks auskommen.

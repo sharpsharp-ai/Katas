@@ -6,8 +6,8 @@ und eigener AGENTS.md. Fertig ist eine Änderung, wenn `mvn -q verify` ohne Ausg
 
 | Kata | Worum es geht | Startstand |
 |---|---|---|
-| `gildedrose/` | Legacy-Code unter Test bringen, dann umbauen, dann „Conjured" einbauen (Terry Hughes, Emily Bache) | der Code der Kata, ein Test |
-| `tripservice/` | fest verdrahtete Abhängigkeiten: Nähte, dann Mocks (Sandro Mancuso) | der Code mit einer Naht, ein Spy-Test |
+| `gildedrose/` | Legacy-Code mit Sicherheitsnetz umbauen, dann „Conjured" einbauen (Terry Hughes, Emily Bache) | der Code der Kata, die 25 Tests der Original-Kata |
+| `tripservice/` | fest verdrahtete Abhängigkeiten: Nähte, dann Mocks (Sandro Mancuso) | der Code der Kata, ein Canary-Test |
 | `stringcalculator/` | TDD von der ersten Zeile an (Roy Osherove) | leer, ein Testname |
 | `trainreservation/` | Mockist TDD mit zwei Diensten als Ports (Emily Bache) | Werte, Ports, ein mockist-Test |
 | `bowling/` | TDD Schritt für Schritt, Testfälle aus dem Dokument (Robert C. Martin) | leer |
