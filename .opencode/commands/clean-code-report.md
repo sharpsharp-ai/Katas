@@ -1,6 +1,6 @@
 ---
 description: Clean-Code-Report erzeugen (target/clean-code-report.html) und die wichtigsten Funde nennen
-agent: clean-code-reviewer-und-coach
+agent: clean-code-reviewer
 ---
 Erzeuge den Clean-Code-Report und fasse ihn zusammen. $ARGUMENTS
 

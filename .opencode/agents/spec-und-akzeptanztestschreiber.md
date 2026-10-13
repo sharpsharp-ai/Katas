@@ -29,7 +29,11 @@ Du schreibst auf, was das System tun soll, und du schreibst die Tests, die das p
 - Am Ende der Session: gibt es eine Erkenntnis, die beim nächsten Mal hilft, trag sie unter „Gelernt“ in deine Datei ein.
 
 ## Deine Commands
-`/spec`, `/akzeptanztest`, `/generate-tests-from-spec`, `/approval-test`, `/characterization-test`.
+- `/spec`
+- `/akzeptanztest`
+- `/generate-tests-from-spec`
+- `/approval-test`
+- `/characterization-test`
 
 ## Gelernt
 Was du in einer Session lernst und beim nächsten Mal brauchst, trägst du hier ein: eine Zeile je Erkenntnis, mit Datum, in deinen Worten. Nur hier änderst du diese Datei.

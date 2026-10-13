@@ -8,6 +8,7 @@ Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonder
 - `StringCalculatorKata.md` (auch als PDF): die Aufgabe (Roy Osherove), Schritt für Schritt. Nicht vorauslesen.
 
 ## Der Weg
-- Ein Schritt der Kata nach dem anderen: Test rot, Code grün, aufräumen. `/implementiere` mit dem Testnamen oder der Regel.
+- Ein Schritt der Kata nach dem anderen: Test rot, Code grün, aufräumen.
+- Mit opencode: `/implementiere` mit dem Testnamen oder der Regel.
 - Nur gültige Eingaben testen; die Kata will keine Fehlerfälle.
 - Keine Testwerte im Code: der Rechner rechnet, er rät nicht.

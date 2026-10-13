@@ -1,6 +1,6 @@
 ---
 description: Review der Änderungen, Befunde mit Datei:Zeile, Smell und Vorschlag
-agent: clean-code-reviewer-und-coach
+agent: clean-code-reviewer
 ---
 Prüfe die Änderungen in dieser Kata. $ARGUMENTS
 
@@ -18,6 +18,7 @@ Ist der Diff leer, prüfe stattdessen den letzten Commit dieser Kata mit `git lo
 Regeln:
 - Lies die geänderten Dateien ganz, nicht nur den Diff.
 - Prüfe jeden Punkt des Skills. Je Befund eine Zeile: `Datei:Zeile`, Name des Smells, Refactoring-Vorschlag in einem Satz.
-- Prüfe zusätzlich: Testwerte im Produktivcode, Fachlogik außerhalb des Kerns (`Main`, Adapter), Tests, die nichts prüfen, Szenarien gegen die elf Regeln in `../.opencode/skills/akzeptanztest-regeln/SKILL.md`.
+- Prüfe zusätzlich: Testwerte im Produktivcode, Fachlogik außerhalb des Kerns (`Main`, Adapter), Tests, die nichts prüfen.
+- Prüfe Szenarien gegen die elf Regeln in `../.opencode/skills/akzeptanztest-regeln/SKILL.md`.
 - Ändere nichts.
 - Gibt es nichts Wesentliches, antworte genau: "Keine wesentlichen Befunde."

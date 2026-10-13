@@ -14,5 +14,5 @@ Die Regeln der Wurzel gelten (`../AGENTS.md`). Hier nur, was diese Kata besonder
 - Erst unter Test bringen, dann umbauen. Nie beides in einem Schritt.
 
 ## Der Weg
-- `/coach`: der Clean-Code-Reviewer und Coach führt Schritt für Schritt, mit den Techniken aus dem Skill legacy-seams.
+- `/coach`: der Clean-Code-Coach führt Schritt für Schritt, mit den Techniken aus dem Skill legacy-seams.
 - Ziel: `TripService` vollständig unter Test bringen, dann hin zu Clean Code refactoren und so umbauen, dass der Test keinen Spy mehr braucht, sondern mit Mocks auskommt.
