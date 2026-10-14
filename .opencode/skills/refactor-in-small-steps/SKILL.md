@@ -32,6 +32,7 @@ Ein Refactoring ändert die Struktur und lässt das Verhalten, wie es ist. Der B
 | Consolidate Conditional | zwei Bedingungen mit gleichem Ergebnis zu einer, eigener Schritt | mit Extract Method vermischen |
 | Replace Nested Conditional with Guard Clauses | ein Sonderfall nach vorn mit `return` oder `continue`, je Schritt einer | die Reihenfolge der Prüfungen ändert das Ergebnis |
 | Move Method | Methode dorthin, wo ihre Daten sind, Rumpf wörtlich | beim Umzug „aufräumen" |
+| Extract Class | mehrere lokale Variablen oder Felder, die immer zusammen geändert werden, in eine kleine Klasse; je Schritt ein Feld umziehen | alle Felder auf einmal; Verhalten in die neue Klasse schieben, bevor alle Felder drüben sind |
 | Replace Conditional with Polymorphism | viele Schritte: erst die Klassen, dann je Zweig einer | alles auf einmal |
 
 ## Beispiel, drei Schritte

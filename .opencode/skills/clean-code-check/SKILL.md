@@ -20,6 +20,7 @@ Je Punkt ja oder nein. Bei nein: Smell nennen, Refactoring vorschlagen.
 | 10 | Jeder Test prüft eine Regel und hat einen sprechenden Namen? | Eager Test | Split Test, Rename |
 | 11 | Kein toter Code, keine ungenutzten Felder? | Dead Code | Remove |
 | 12 | Zeit und Zufall hinter einem Interface? | Hidden Dependency | Extract Interface |
+| 13 | Keine Gruppe von Variablen oder Parametern, die immer zusammen auftauchen und zusammen geändert werden? | Data Clumps | Extract Class, Introduce Parameter Object |
 
 Antwort je Befund: `Datei:Zeile`, Smell, Vorschlag in einem Satz.
 Nichts gefunden: "Keine wesentlichen Befunde."

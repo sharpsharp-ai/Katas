@@ -32,7 +32,7 @@ Dann lies die Methode ganz, samt der privaten Methoden, die sie ruft, und zeichn
 | 1 | Ein Test, ein Weg durch die Methode, ein Verhalten | Bricht ein Test, sagt sein Name, was sich geändert hat |
 | 2 | Name = beobachtetes Verhalten, in der Sprache der Tests des Projekts, nie `test1` | Die Tests sind die Doku des Legacy-Codes |
 | 3 | Alles prüfen, was die Methode verändert, nicht nur den Rückgabewert: Parameter, Felder, Aufrufe an Abhängigkeiten | Was verändert wird und nicht geprüft ist, ist ungeschützt |
-| 4 | Deterministisch: kein Zufall, keine Uhr, kein Netz. Braucht die Methode eine feste Abhängigkeit, wird sie an einer Naht ersetzt; gibt es keine Naht, Stopp und sagen, welche fehlt | Der Test muss morgen dasselbe sagen |
+| 4 | Deterministisch: kein Zufall, keine Uhr, kein Netz. Braucht die Methode eine feste Abhängigkeit, wird sie an einer Naht ersetzt; gibt es keine Naht, Stopp und sagen, welche fehlt. Meldungen, die eine fremde Bibliothek oder die Laufzeit formt, hält der Test nur so weit fest, wie der eigene Code sie bestimmt: Klasse der Ausnahme und der eigene Teil des Texts | Der Test muss morgen dasselbe sagen, auch auf einer anderen Version der Laufzeit |
 | 5 | Produktivcode bleibt unverändert, auch kein `private` wird für einen Test geöffnet | Erst das Netz, dann der Umbau |
 | 6 | Fehler nicht reparieren, sondern festhalten: Ist-Wert plus `// Beobachtung:` | Ob die Regel geändert wird, entscheidet später jemand bewusst |
 | 7 | Ein Test, dann der Build, dann der nächste Test; nie mehrere Tests auf einmal schreiben, nie mehr als ein roter Test gleichzeitig | Kleine Schritte, klare Ursache; wer vier Tests auf einmal schreibt, gräbt nicht, er schüttet |
